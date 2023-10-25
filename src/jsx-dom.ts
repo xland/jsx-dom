@@ -322,7 +322,7 @@ function attribute(key: string, value: any, node: Element & HTMLOrSVGElement) {
       // use attribute for other elements
       break
     case "spellCheck":
-      cast<HTML.Input>(node).spellcheck = value
+      cast<HTML.Input>(node).spellcheck = value === "true"
       return
     case "class":
     case "className":
